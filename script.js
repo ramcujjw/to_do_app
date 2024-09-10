@@ -56,31 +56,29 @@ else{
 
  if(username.value == "admin" && password.value == "12345" ){
      // e.preventDefault()
-     window.location.replace('home.html')    // validate(redirect)
+    //  window.location.replace('home.html')    
+     validate(redirect)
  }
 
          return valid;
 }
 
 
-// function validate(callback){
-//     //somelogic
-//     callback("/home.html")
-//   }
+
 
 // function redirect(url) {
 //     // location.replace(url)
-//       window.location.href = "/home.html"
+//       window.location.href = "home.html"
 //   }
 
-//  function validate(callback) {
-//             // Some logic can go here
-//             callback("/home.html"); // Call the redirect function with the URL
-//         }
+ function validate(callback) {
+            // Some logic can go here
+            callback("home.html"); // Call the redirect function with the URL
+        }
 
-//         function redirect(url) {
-//             window.location.href = url; // Redirect to the specified URL
-//         }
+        function redirect(url) {
+            window.location.href = url; // Redirect to the specified URL
+        }
 
 document.getElementById('registrationForm').addEventListener('submit', formSubmit);
 
